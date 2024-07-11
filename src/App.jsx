@@ -1,17 +1,15 @@
-import './App.css'
+import "./App.css";
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import CartWidget from "./components/CartWidget/CartWidget";
 
 function App() {
-
   return (
-    <>
-      <div>
-       <h1>hola worldo</h1>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <NavBar />
+      <ItemListContainer greeting={'Bienvenidos'} />
+    </div>
+  );
 }
 
-export default App
+export default App;

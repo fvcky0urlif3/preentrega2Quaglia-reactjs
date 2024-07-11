@@ -1,0 +1,17 @@
+.navbar {
+    width: 100%;
+    height: 145px;
+    background-color: blueviolet;
+    display: flex;
+}
+
+.logosweet {
+    width: 144px;
+    height: 144px;
+}
+
+.botones {
+    margin-inline: 40px;
+    margin-top: 70px;
+
+}
