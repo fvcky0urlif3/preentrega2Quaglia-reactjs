@@ -1,4 +1,5 @@
 .navbar {
+    flex-direction: column
     width: 100%;
     height: 145px;
     background-color: blueviolet;
@@ -10,8 +11,11 @@
     height: 144px;
 }
 
-.botones {
-    margin-inline: 40px;
-    margin-top: 70px;
-
+.categoria {
+    color: black;
+     border-color: beige;
+     flex-direction: column;
+     margin-inline: 40px;
+     margin-top: 70px;
+     text-decoration: none;
 }
