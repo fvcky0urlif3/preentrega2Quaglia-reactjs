@@ -6,29 +6,31 @@ const NavBar = () => {
     return (
         <nav className="navbar">
             <div>
+                <Link to="/" className="logosweet">
                 <img className="logosweet" src="./src/assets/sweetlogo.webp" alt="Logo sweet Leaf" />
+                </Link>
             </div>
          
         <ul className="categorias">
 
             <Link to="/categoria/caps" className="categoria">
-            <p>Caps</p>
+            <button>Caps</button>
             </Link>
 
             <Link to="/categoria/grips" className="categoria">
-            <p>Odi Grips</p>
+            <button>Odi Grips</button>
             </Link>
 
             <Link to="/categoria/hoodies" className="categoria">
-            <p>Hoodies</p>
+            <button>Hoodies</button>
             </Link>
 
             <Link to="/categoria/pedal" className="categoria">
-            <p>Sig Pedal</p>
+            <button>Sig Pedal</button>
             </Link>
 
             <Link to="/categoria/remes" className="categoria">
-            <p>Remes</p>
+            <button>Remes</button>
             </Link>
 
         </ul>

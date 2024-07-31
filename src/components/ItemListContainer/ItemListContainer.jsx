@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 
 const ItemListContainer = ({saludo}) => {
   const [productos, setProductos]  = useState ([])
-  const {idCategoria} = useParams();
+  const { idCategoria } = useParams();
 
    useEffect ( ()=> {
     obtenerProductos()
@@ -26,7 +26,7 @@ const ItemListContainer = ({saludo}) => {
     .finally(() => {
         console.log("finalizo la promesa");
     });
-}, []);
+}, [idCategoria]);
 
 
     return (
