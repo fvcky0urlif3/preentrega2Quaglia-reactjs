@@ -14,9 +14,7 @@ if (count > 1) {
 }
 }
 
-
-
-    return (   
+return (   
         <div>
             <button onClick={disminuir}>-</button>
             <p>{count}</p>
