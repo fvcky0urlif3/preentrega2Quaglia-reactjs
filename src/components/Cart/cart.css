@@ -12,7 +12,7 @@
 .empty-cart {
   text-align: center;
   font-size: 1.5em;
-  color: #ccc;
+  color: #ccc; /* Color de texto para el mensaje de carrito vacío */
 }
 
 .button-empty-cart {
@@ -23,6 +23,7 @@
   color: white;
   border-radius: 5px;
   text-decoration: none;
+  font-size: 1em;
 }
 
 .button-empty-cart:hover {
@@ -72,7 +73,7 @@
 }
 
 .cart-item-details button {
-  background-color: #007bff;
+  background-color: #007bff; /* Color de fondo del botón */
   color: white;
   border: none;
   border-radius: 5px;
@@ -82,12 +83,12 @@
 }
 
 .cart-item-details button:disabled {
-  background-color: #aaa;
+  background-color: #aaa; /* Color para botón deshabilitado */
   cursor: not-allowed;
 }
 
 .cart-item-details button:hover:not(:disabled) {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Color de fondo del botón en hover */
 }
 
 .cart-controls {
@@ -98,7 +99,7 @@
 .cart-controls h2 {
   margin-bottom: 10px;
   font-size: 1.5em;
-  color: #fff;
+  color: #fff; /* Color del texto del total */
 }
 
 .cart-controls .buttons {
@@ -116,6 +117,7 @@
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 1em;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -126,8 +128,9 @@
 .button-cart svg {
   margin-right: 5px;
 }
+
 .cart-item-controls button {
-  background-color: #007bff;
+  background-color: #007bff; /* Color de fondo del botón */
   color: white;
   border: none;
   border-radius: 5px;
@@ -138,10 +141,10 @@
 }
 
 .cart-item-controls button:disabled {
-  background-color: #aaa;
+  background-color: #aaa; /* Color para botón deshabilitado */
   cursor: not-allowed;
 }
 
 .cart-item-controls button:hover:not(:disabled) {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Color de fondo del botón en hover */
 }
