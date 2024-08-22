@@ -1,23 +1,73 @@
+/* src/components/NavBar/navbar.css */
 .navbar {
-    width: 100%;
-    height: 145px;
-    background-color: blueviolet;
-    display: flex; 
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(45, 45, 45);
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 150px; /* Agrega espacio suficiente en la parte superior para el Navbar */
 }
 
 .logosweet {
-    width: 144px;
-    height: 144px;
+  width: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logosweet img {
+  max-width: 144px;
+  height: auto;
 }
 
 .categorias {
-    color: black;
-     flex-direction: column;
-     margin-inline: 40px;
-     margin-top: 70px;
-     text-decoration: none;
+  width: calc(100% - 120px); /* Adjusted width to make space for CartWidget */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .categoria {
-    
+  margin-right: 20px; /* Space between categories */
+}
+
+.botones {
+  background-color: rgb(80, 10, 31);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botones:hover {
+  background-color: rgb(206, 38, 167);
+  transform: scale(1.05);
+}
+
+.cartwidget {
+  display: flex;
+  align-items: center;
+}
+
+.cartwidget p {
+  padding: 0 10px;
+  font-size: 20px;
 }

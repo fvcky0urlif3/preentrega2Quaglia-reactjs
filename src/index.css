@@ -1,6 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
-box-sizing: border-box;
-font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+body {
+  color: white;
+  background-color: blueviolet;
 }

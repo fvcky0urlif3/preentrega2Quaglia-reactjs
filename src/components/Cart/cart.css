@@ -1,0 +1,147 @@
+/* src/components/Cart/cart.css */
+
+.cart {
+  padding: 20px;
+  background-color: #222; /* Fondo oscuro para contrastar con el texto */
+  color: #fff; /* Texto blanco para mayor legibilidad */
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 1.5em;
+  color: #ccc;
+}
+
+.button-empty-cart {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button-empty-cart:hover {
+  background-color: #0056b3; /* Color de fondo del botón en hover */
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  background-color: #333; /* Fondo más oscuro para los ítems del carrito */
+  border: 1px solid #555; /* Borde ligero para separación */
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cart-item img {
+  border-radius: 8px;
+  max-width: 150px;
+  height: auto;
+}
+
+.cart-item p {
+  margin: 5px 0;
+  color: #fff; /* Color del texto */
+  font-size: 1em;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-details p {
+  margin: 5px 0;
+}
+
+.cart-item-details .controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cart-item-details button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.cart-item-details button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.cart-item-details button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.cart-controls {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart-controls h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.cart-controls .buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.button-cart {
+  display: flex;
+  align-items: center;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.button-cart:hover {
+  background-color: #0056b3; /* Color de fondo del botón en hover */
+}
+
+.button-cart svg {
+  margin-right: 5px;
+}
+.cart-item-controls button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.cart-item-controls button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.cart-item-controls button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
