@@ -1,5 +1,3 @@
-/* src/components/ItemDetailContainer/itemDetailContainer.css */
-
 .item-detail-container {
   padding: 20px;
   background-color: #222;
@@ -66,4 +64,23 @@
 
 .item-detail .detail .add:hover {
   background-color: #8f0c91;
+}
+
+.ver-mas-productos-btn {
+  background-color: #ea00ff; /* Color de fondo del botón */
+  color: #000000; /* Color del texto */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: fit-content;
+  align-self: flex-start; /* Alinea el botón a la izquierda dentro del contenedor */
+}
+
+.ver-mas-productos-btn:hover {
+  background-color: #8f0c91; /* Color de fondo en hover */
+  color: #fff; /* Color del texto en hover */
 }

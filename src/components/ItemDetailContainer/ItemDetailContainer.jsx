@@ -2,13 +2,14 @@ import { useState, useEffect } from 'react';
 import { doc, getDoc } from 'firebase/firestore';
 import db from '../../db/db.js';
 import ItemDetail from './ItemDetail';
-import './ItemDetailContainer.css';
-import { useParams } from 'react-router-dom';
+import './ItemDetailContainer.css'; // Asegúrate de importar el CSS
+import { useParams, useNavigate } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState(null);
   const [cargando, setCargando] = useState(true);
   const { idProducto } = useParams();
+  const navigate = useNavigate(); // Agrega esta línea para usar navigate
 
   useEffect(() => {
     const getProduct = async () => {
@@ -36,6 +37,13 @@ const ItemDetailContainer = () => {
   return (
     <div className="item-detail-container">
       {producto && <ItemDetail producto={producto} />}
+      {/* Botón para seguir navegando */}
+      <button
+        className="ver-mas-productos-btn"
+        onClick={() => navigate(`/categoria/${producto.categoria}`)}
+      >
+        Ver más productos
+      </button>
     </div>
   );
 };

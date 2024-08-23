@@ -1,14 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { getDocs, collection, query, where } from 'firebase/firestore';
 import db from '../../db/db.js';
 import ItemList from './ItemList';
 import './itemListContainer.css';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
+import { CategoryContext } from '../../context/CategoryContext'; // Importa el contexto
 
 const ItemListContainer = ({ saludo }) => {
   const [productos, setProductos] = useState([]);
   const [estaCargando, setEstaCargando] = useState(true);
   const { idCategoria } = useParams(); // Obtener la categoría desde los parámetros de la URL
+  const location = useLocation();
+  const { setCategory } = useContext(CategoryContext); // Obtén la función para actualizar la categoría
 
   useEffect(() => {
     const getProducts = async () => {
@@ -17,6 +20,7 @@ const ItemListContainer = ({ saludo }) => {
         
         if (idCategoria && idCategoria !== '') { // Verificar si hay una categoría definida
           productosRef = query(productosRef, where("categoria", "==", idCategoria));
+          setCategory(idCategoria); // Actualiza la categoría previa
         }
 
         const dataDb = await getDocs(productosRef);
@@ -33,11 +37,10 @@ const ItemListContainer = ({ saludo }) => {
     };
 
     getProducts();
-  }, [idCategoria]); // Dependencia de categoría
+  }, [idCategoria, location, setCategory]); // Añade dependencias relevantes
 
   return (
     <div className="item-list-container">
-      {/* Mostrar contenido adicional solo si no hay una categoría seleccionada */}
       {!idCategoria ? (
         <>
           <h3>{saludo}</h3>
@@ -50,7 +53,6 @@ const ItemListContainer = ({ saludo }) => {
             los Odi grips SLX y los 'JJ' pedals Sweet Oil colorway!
           </p>
 
-          {/* Video de YouTube embebido */}
           <div className="video-container">
             <iframe
               width="560"
@@ -63,14 +65,12 @@ const ItemListContainer = ({ saludo }) => {
             ></iframe>
           </div>
 
-          {/* Leyenda de Instagram */}
           <div className="instagram-legend">
             <p>
               Puedes seguirnos en nuestro Instagram, subimos videos y fotos de cada evento y juntada, además de clips de nuestros riders!!
             </p>
           </div>
 
-          {/* Perfil de Instagram embebido */}
           <div className="instagram-container">
             <iframe
               src="https://www.instagram.com/sweetleafcrew/embed"
@@ -82,12 +82,10 @@ const ItemListContainer = ({ saludo }) => {
             ></iframe>
           </div>
 
-          {/* Leyenda de riders */}
           <div className="riders-legend">
             <p>Conoce a nuestros riders</p>
           </div>
 
-          {/* Perfiles de Instagram de los riders */}
           <div className="riders-links">
             <iframe
               src="https://www.instagram.com/fvcky0urlif3/embed"
@@ -119,7 +117,6 @@ const ItemListContainer = ({ saludo }) => {
             ></iframe>
           </div>
 
-          {/* Leyenda de navegación */}
           <div className="navigation-legend">
             <p>
               Debajo chequea todos los productos de nuestra Merch o navega por el menú y llena tu carrito!!
