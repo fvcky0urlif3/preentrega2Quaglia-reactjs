@@ -7,8 +7,8 @@ import Cart from './components/Cart/Cart';
 import FloatingCartButton from './components/FloatingCartButton/FloatingCartButton';
 import { CartProvider } from './context/CartContext';
 import Checkout from './components/Checkout/Checkout';
+import Footer from './components/Footer/Footer';
 import './App.css';
-
 
 function App() {
   return (
@@ -22,7 +22,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
-      <FloatingCartButton /> {/* Agrega el botón flotante aquí */}
+        <FloatingCartButton /> {/* Botón flotante */}
+        <Footer /> {/* Footer */}
       </CartProvider>
     </BrowserRouter>
   );

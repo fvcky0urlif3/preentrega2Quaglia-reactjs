@@ -1,18 +1,21 @@
 .floating-cart-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 1em;
-    z-index: 1000;
-  }
-  
-  .floating-cart-button:hover {
-    background-color: #0056b3;
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d400ff;
+  color: rgb(0, 0, 0); /* Color del texto por defecto */
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  font-weight: bold; /* Texto en negrita */
+  z-index: 1000;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Transiciones suaves para color y fondo */
+}
+
+.floating-cart-button:hover {
+  background-color: #8000b3;
+  color: #ffffff; /* Color del texto al pasar el mouse */
+}

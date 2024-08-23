@@ -1,7 +1,8 @@
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
-import "./navbar.css";
+import { FaShoppingCart } from 'react-icons/fa'; // Importa el ícono de carrito de compras
+import './navbar.css';
 
 const CartWidget = () => {
   const { cantidadTotal } = useContext(CartContext);
@@ -10,9 +11,10 @@ const CartWidget = () => {
 
   return (
     <Link to="/cart" className="cartwidget">
-    <li className="botones">🛒</li>
-      <p>{cantidad > 0 && cantidad}</p>
+      <FaShoppingCart className="cart-icon" />
+      {cantidad > 0 && <div className="cart-quantity">{cantidad}</div>}
     </Link>
   );
 };
+
 export default CartWidget;

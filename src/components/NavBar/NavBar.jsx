@@ -7,7 +7,7 @@ const NavBar = () => {
         <nav className="navbar">
             <div>
                 <Link to="/" className="logosweet">
-                    <img className="logosweet" src="/src/assets/sweetlogo.webp" alt="Logo sweet Leaf" />
+                    <img className="logosweet" src="/src/assets/sweetlogo.webp" alt="Logo Sweet Leaf" />
                 </Link>
             </div>
 
@@ -27,7 +27,7 @@ const NavBar = () => {
                 <li>
                     <Link to="/categoria/remes" className="botones">Remes</Link>
                 </li>
-                <li>
+                <li className="cart-widget-container">
                     <CartWidget />
                 </li>
             </ul>

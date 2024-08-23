@@ -1,4 +1,5 @@
 /* src/components/ItemCount/ItemCount.css */
+
 .itemcount {
   display: flex;
   flex-direction: column;
@@ -12,18 +13,20 @@
 }
 
 .control-button {
-  background-color: #007bff;
-  color: white;
+  background-color: #d400ff !important; /* Color de fondo del botón */
+  color: rgb(0, 0, 0) !important;
   border: none;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.5em;
   margin: 0 10px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
 }
 
 .control-button:hover {
-  background-color: #0056b3;
+  background-color: #8000b3 !important; /* Color de fondo del botón en hover */
+  color: rgb(6, 6, 6) !important; /* Color del texto en hover */
 }
 
 .count {
@@ -32,15 +35,17 @@
 }
 
 .add {
-  background-color: #28a745;
-  color: white;
+  background-color: #d400ff !important; /* Color de fondo del botón */
+  color: rgb(8, 8, 8) !important;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.2em;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
 }
 
 .add:hover {
-  background-color: #218838;
+  background-color: #8000b3 !important; /* Color de fondo del botón en hover */
+  color: white !important; /* Color del texto en hover */
 }
