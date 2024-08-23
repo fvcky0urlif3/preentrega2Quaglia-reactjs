@@ -4,8 +4,7 @@ import { doc, getDoc } from 'firebase/firestore';
 import db from '../../db/db.js';
 import ItemDetail from './ItemDetail';
 import './ItemDetailContainer.css';
-import '../ItemCount/ItemCount.jsx';
-import { useParams } from 'react-router-dom'; 
+import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState(null);
@@ -17,7 +16,7 @@ const ItemDetailContainer = () => {
       try {
         const docRef = doc(db, 'productos', idProducto);
         const docSnap = await getDoc(docRef);
-        
+
         if (docSnap.exists()) {
           setProducto({ id: docSnap.id, ...docSnap.data() });
         } else {

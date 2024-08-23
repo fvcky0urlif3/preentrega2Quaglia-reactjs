@@ -1,4 +1,3 @@
-/* src/components/ItemDetailContainer/itemDetailContainer.css */
 .item-detail-container {
   display: flex;
   justify-content: center;
@@ -7,9 +6,7 @@
 
 .item-detail {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start; 
   background-color: #f5f5f5;
   border-radius: 10px;
   padding: 20px;
@@ -19,28 +16,31 @@
 }
 
 .item-detail .image {
-  margin-bottom: 20px;
+  margin-right: 20px; 
 }
 
 .item-detail .image img {
-  max-width: 100%;
+  max-width: 250px; 
   height: auto;
   border-radius: 10px;
 }
 
 .item-detail .detail {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  max-width: 500px;
 }
 
 .item-detail .detail h2 {
   margin-bottom: 10px;
-  font-size: 2em;
+  font-size: 1.5em; 
   color: #333;
 }
 
 .item-detail .detail p {
   margin: 5px 0;
-  font-size: 1.2em;
+  font-size: 1em; 
   color: #666;
 }
 
@@ -52,7 +52,7 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1em; 
 }
 
 .item-detail .detail .add:hover {

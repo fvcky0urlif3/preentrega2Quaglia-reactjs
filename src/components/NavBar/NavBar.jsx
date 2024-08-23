@@ -1,42 +1,36 @@
 import "./navbar.css";
 import CartWidget from "./CartWidget";
-import { Link } from "react-router-dom";   
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
         <nav className="navbar">
             <div>
                 <Link to="/" className="logosweet">
-                <img className="logosweet" src="./src/assets/sweetlogo.webp" alt="Logo sweet Leaf" />
+                    <img className="logosweet" src="/src/assets/sweetlogo.webp" alt="Logo sweet Leaf" />
                 </Link>
             </div>
-         
-        <ul className="categorias">
 
-            <Link to="/categoria/caps" className="categoria">
-            <button className="botones">Caps</button>
-            </Link>
-
-            <Link to="/categoria/grips" className="categoria">
-            <button className="botones">Odi Grips</button>
-            </Link>
-
-            <Link to="/categoria/hoodies" className="categoria">
-            <button className="botones">Hoodies</button>
-            </Link>
-
-            <Link to="/categoria/pedal" className="categoria">
-            <button className="botones">Sig Pedal</button>
-            </Link>
-
-            <Link to="/categoria/remes" className="categoria">
-            <button className="botones">Remes</button>
-            </Link>
-
-            <CartWidget />
-
-        </ul>
-
+            <ul className="categorias">
+                <li>
+                    <Link to="/categoria/caps" className="botones">Caps</Link>
+                </li>
+                <li>
+                    <Link to="/categoria/grips" className="botones">Odi Grips</Link>
+                </li>
+                <li>
+                    <Link to="/categoria/hoodies" className="botones">Hoodies</Link>
+                </li>
+                <li>
+                    <Link to="/categoria/pedal" className="botones">Sig Pedal</Link>
+                </li>
+                <li>
+                    <Link to="/categoria/remes" className="botones">Remes</Link>
+                </li>
+                <li>
+                    <CartWidget />
+                </li>
+            </ul>
         </nav>
     );
 }

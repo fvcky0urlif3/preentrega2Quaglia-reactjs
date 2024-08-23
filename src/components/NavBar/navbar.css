@@ -1,6 +1,6 @@
 /* src/components/NavBar/navbar.css */
 .navbar {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -13,20 +13,19 @@
   font-size: 15px;
   font-weight: bold;
   padding: 0 20px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  justify-content: space-between; /* Espacio entre el logo y los botones */
 }
 
 body {
   margin: 0;
   padding: 0;
-  padding-top: 150px; /* Agrega espacio suficiente en la parte superior para el Navbar */
+  padding-top: 100px; /* Espacio suficiente en la parte superior para el Navbar */
 }
 
 .logosweet {
-  width: 144px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-right: 20px;
 }
 
 .logosweet img {
@@ -35,14 +34,17 @@ body {
 }
 
 .categorias {
-  width: calc(100% - 120px); /* Adjusted width to make space for CartWidget */
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 20px; /* Espacio entre los botones */
+  list-style: none; /* Elimina los puntos de lista */
+  padding: 0; /* Elimina el padding predeterminado de ul */
+  margin: 0; /* Elimina el margen predeterminado de ul */
 }
 
 .categoria {
-  margin-right: 20px; /* Space between categories */
+  display: flex;
+  align-items: center;
 }
 
 .botones {
@@ -55,6 +57,7 @@ body {
   cursor: pointer;
   text-align: center;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none; /* Asegura que los enlaces no tengan subrayado por defecto */
 }
 
 .botones:hover {
