@@ -14,13 +14,6 @@
 - **Footer**: Pie de página fijo y estilizado para mantener la coherencia del diseño sin superponerse a las cards de producto.
 - **Profe y tutores**: Gracias por las clases, un lujo el material que nos aportaron y como explicaron en cada situacion. Un gusto recomendarlos y agradecerles por su labor.
 
-## Instalación
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/fvcky0urlif3/workshop-Final-Quaglia-reactjs
-   cd sweetleafmerch
-
 ## Dependencias
 `firebase` 
 `react`
