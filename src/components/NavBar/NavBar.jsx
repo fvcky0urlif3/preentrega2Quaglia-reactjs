@@ -7,7 +7,7 @@ const NavBar = () => {
         <nav className="navbar">
             <div>
                 <Link to="/" className="logosweet">
-                    <img className="logosweet" src="/src/assets/sweetlogo.webp" alt="Logo Sweet Leaf" />
+                    <img className="logosweet" src="../../img/sweetlogo.webp" alt="Logo Sweet Leaf" />
                 </Link>
             </div>
 
