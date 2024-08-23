@@ -8,10 +8,12 @@ const Cart = () => {
   const navigate = useNavigate(); // Inicializar useNavigate
 
   if (carrito.length === 0) {
-    return  <div className="empty-cart">
-    <p> 😭 El carrito está vacío  😭</p>
-    <a href="/" className="button-empty-cart">Volver a la tienda</a>
-  </div>
+    return (
+      <div className="empty-cart">
+        <p> 😭 El carrito está vacío  😭</p>
+        <a href="/" className="button-empty-cart">Volver a la tienda</a>
+      </div>
+    );
   }
 
   return (
@@ -45,6 +47,12 @@ const Cart = () => {
             onClick={() => navigate('/checkout')} // Redirigir al checkout
           >
             Proceder al Pago
+          </button>
+          <button 
+            className="button-cart"
+            onClick={() => navigate('/')} // Redirigir a la página principal
+          >
+            Seguir Navegando
           </button>
         </div>
       </div>

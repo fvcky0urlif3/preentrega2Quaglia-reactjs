@@ -1,3 +1,4 @@
+// src/context/CartContext.jsx
 import { createContext, useState } from 'react';
 
 const CartContext = createContext();
@@ -6,13 +7,13 @@ const CartProvider = ({ children }) => {
   const [carrito, setCarrito] = useState([]);
 
   const agregarProducto = (productoNuevo) => {
-    const condicion = carrito.some(
+    const existeEnCarrito = carrito.some(
       (productoCarrito) =>
         productoCarrito.id === productoNuevo.id &&
         productoCarrito.categoria === productoNuevo.categoria
     );
 
-    if (condicion) {
+    if (existeEnCarrito) {
       const nuevoCarrito = carrito.map((productoCarrito) => {
         if (
           productoCarrito.id === productoNuevo.id &&

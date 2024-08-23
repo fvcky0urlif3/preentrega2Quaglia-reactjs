@@ -1,42 +1,161 @@
+/* itemListContainer.css */
+
+/* Estilo para el contenedor principal */
+.item-list-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilo para el título */
+.item-list-container h3 {
+  font-size: 2.5rem;
+  color: rgb(35, 12, 73);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Estilo para los párrafos */
+.item-list-container p {
+  font-size: 1.2rem;
+  color: #444; /* Color gris oscuro para mejor contraste */
+  line-height: 1.6;
+  margin-bottom: 20px; /* Mayor espaciado inferior para separar párrafos */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo para la descripción */
+.description {
+  font-size: 1.4rem; /* Ajustado para mayor legibilidad */
+  color: #444; /* Color gris oscuro para mejor contraste */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor del video de YouTube */
+.video-container {
+  margin: 20px auto;
+}
+
+/* Estilo para el iframe de YouTube */
+.video-container iframe {
+  border-radius: 15px; /* Radio de borde para redondear las esquinas */
+}
+
+/* Estilo para el contenedor del perfil de Instagram */
+.instagram-container {
+  margin: 20px auto;
+}
+
+/* Estilo para el iframe de Instagram */
+.instagram-container iframe {
+  border-radius: 15px; /* Radio de borde para redondear las esquinas */
+}
+
+/* Estilo para la leyenda de Instagram */
+.instagram-legend {
+  font-size: 1.2rem;
+  color: #444; /* Color gris oscuro para mejor contraste */
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Estilo para la leyenda de riders */
+.riders-legend {
+  font-size: 1.2rem;
+  color: #444; /* Color gris oscuro para mejor contraste */
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Estilo para los perfiles de Instagram de los riders */
+.riders-links {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los perfiles se ajusten en varias líneas si es necesario */
+  justify-content: center; /* Centra los perfiles */
+  gap: 20px; /* Espaciado entre perfiles */
+  margin: 20px auto;
+}
+
+.riders-links iframe {
+  border-radius: 15px; /* Radio de borde para redondear las esquinas */
+  width: 300px; /* Ancho fijo para los perfiles */
+  height: 400px; /* Alto fijo para los perfiles */
+  flex-shrink: 0; /* Evita que los iframes se reduzcan en tamaño */
+}
+
+/* Estilo para la leyenda de navegación */
+.navigation-legend {
+  font-size: 1.2rem;
+  color: #444; /* Color gris oscuro para mejor contraste */
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Estilo para las tarjetas de productos */
 .itemlist {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; 
-  padding: 20px; 
+  justify-content: center; /* Centra las tarjetas de productos */
+  gap: 20px;
+  padding: 20px;
 }
 
+/* Estilo para cada tarjeta de producto */
 .card {
   width: 250px;
   border: 2px solid white;
   border-radius: 10px;
-  overflow: hidden; 
+  overflow: hidden;
   background-color: #f8f8f8;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo para el texto dentro de la tarjeta de producto */
 .card p {
-  font-size: 16px; 
-  padding: 10px; 
-  color: #333; 
-  margin: 0; 
+  font-size: 16px;
+  padding: 10px;
+  color: #333; /* Color de texto para buen contraste */
+  margin: 0;
 }
 
+/* Estilo para la imagen dentro de la tarjeta de producto */
 .img-card {
   width: 100%;
-  height: 200px;   overflow: hidden; }
+  height: 200px;
+  overflow: hidden;
+}
 
 .img-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;   border-bottom: 2px solid white; }
+  object-fit: cover;
+  border-bottom: 2px solid white;
+}
 
+/* Estilo para los enlaces generales */
 .link {
-  display: block; 
+  display: block;
   background-color: rgb(35, 12, 73);
   color: rgb(229, 229, 229);
   padding: 10px 20px;
   border-radius: 10px;
-  text-align: center; 
-  text-decoration: none; 
-  margin: 10px; 
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+}
+
+/* Estilo para los enlaces de perfiles de Instagram de los riders */
+.riders-links a {
+  color: rgb(35, 12, 73); /* Color de texto para los enlaces */
+  text-decoration: none;
+  font-size: 1rem; /* Tamaño de fuente */
+}
+
+.riders-links a:hover {
+  text-decoration: underline; /* Subrayado en hover para los enlaces */
 }
