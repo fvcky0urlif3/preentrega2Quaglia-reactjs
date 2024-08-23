@@ -44,4 +44,10 @@
 .button-form:hover {
   background-color: #8000b3; 
   color: #fff; 
+
+}
+.error-alert {
+  color: #ff4d4d; /* Rojo para advertencias */
+  font-size: 0.875em; /* Tamaño de fuente similar a las advertencias */
+  margin-top: 5px; /* Espacio entre el campo y el mensaje */
 }
