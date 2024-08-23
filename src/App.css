@@ -2,11 +2,11 @@
     font-size: 50px;
   }
 
-  /* App.css */
-.Toastify__toast--success {
-  background-color: #28a745;
+body {
+  margin: 0;
+  padding-bottom: 50px;
 }
 
-.Toastify__toast--error {
-  background-color: #dc3545;
+.main-content {
+  padding-bottom: 50px;
 }

@@ -1,49 +1,47 @@
-/* src/components/Checkout/FormularioCheckout.css */
-
 .form-checkout {
-  background-color: #222; /* Fondo oscuro para consistencia con el carrito */
+  background-color: #222; 
   padding: 20px;
-  border-radius: 10px; /* Borde redondeado similar al carrito */
+  border-radius: 10px; 
   max-width: 500px;
   margin: 0 auto;
-  color: #fff; /* Texto blanco para buena legibilidad */
+  color: #fff; 
 }
 
 .form-checkout label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
-  color: #fff; /* Color del texto de las etiquetas */
+  color: #fff; 
 }
 
 .form-checkout input {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #555; /* Borde más oscuro para encajar con el diseño general */
-  border-radius: 5px; /* Ajustado para mantener consistencia con el diseño del carrito */
-  background-color: #333; /* Fondo del campo de entrada oscuro */
-  color: #fff; /* Texto blanco dentro del campo de entrada */
+  border: 1px solid #555; 
+  border-radius: 5px; 
+  background-color: #333; 
+  color: #fff; 
 }
 
 .button-container {
   display: flex;
-  justify-content: flex-end; /* Alinea el contenido a la derecha */
+  justify-content: flex-end; 
 }
 
 .button-form {
-  background-color: #d400ff; /* Color de fondo del botón */
-  color: #000; /* Texto negro */
+  background-color: #d400ff; 
+  color: #000; 
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 1em;
   cursor: pointer;
   text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves para el color de fondo y el texto */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button-form:hover {
-  background-color: #8000b3; /* Color más oscuro en hover */
-  color: #fff; /* Texto blanco en hover */
+  background-color: #8000b3; 
+  color: #fff; 
 }

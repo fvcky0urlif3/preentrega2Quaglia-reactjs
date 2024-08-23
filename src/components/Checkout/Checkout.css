@@ -1,43 +1,41 @@
-/* src/components/Checkout/checkout.css */
-
 .checkout {
   padding: 20px;
-  background-color: #222; /* Fondo oscuro para mantener la consistencia */
-  color: #fff; /* Texto blanco para mejor legibilidad */
-  border-radius: 10px; /* Borde redondeado similar al carrito */
+  background-color: #222;
+  color: #fff;
+  border-radius: 10px;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .order-completed {
   text-align: center;
-  color: #fff; /* Color del texto */
+  color: #fff;
 }
 
 .order-completed h2 {
   font-size: 1.8em;
-  color: #3acf18; /* Color verde para indicar éxito */
+  color: #3acf18;
 }
 
 .order-completed p {
   margin: 15px 0;
   font-size: 1.2em;
-  color: #ccc; /* Color del texto para mantener contraste */
+  color: #ccc;
 }
 
 .button-return {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #d400ff; /* Color de fondo del botón */
-  color: #000; /* Texto negro */
+  background-color: #d400ff;
+  color: #000;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1em;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves para el color de fondo y el texto */
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .button-return:hover {
-  background-color: #8000b3; /* Color más oscuro en hover */
-  color: #fff; /* Texto blanco en hover */
+  background-color: #8000b3; 
+  color: #fff; 
 }

@@ -17,7 +17,7 @@ const ItemDetail = () => {
       const productoRef = doc(db, "productos", idProducto);
       const productoDoc = await getDoc(productoRef);
       if (productoDoc.exists()) {
-        setProducto({ ...productoDoc.data(), id: idProducto }); // Asegúrate de tener el id del producto
+        setProducto({ ...productoDoc.data(), id: idProducto });
       }
     };
     getProduct();
@@ -29,20 +29,20 @@ const ItemDetail = () => {
     agregarProducto({ 
       ...producto, 
       cantidad, 
-      categoria: producto.categoria // Asegúrate de que la categoría esté incluida
+      categoria: producto.categoria 
     });
   };
 
   return (
-    <div className="item-detail">
-      <div className="image">
-        <img src={producto.imagen} alt={producto.nombre} />
-      </div>
-      <div className="detail">
-        <h2>{producto.nombre}</h2>
-        <p>{producto.descripcion}</p>
-        <p className="price">Precio: ${producto.precio}</p>
-        <ItemCount agregarAlCarrito={handleAgregar} stock={producto.stock} />
+      <div className="item-detail">
+        <div className="image">
+          <img src={producto.imagen} alt={producto.nombre} />
+        </div>
+        <div className="detail">
+          <h2>{producto.nombre}</h2>
+          <p>{producto.descripcion}</p>
+          <p className="price">Precio: ${producto.precio}</p>
+          <ItemCount agregarAlCarrito={handleAgregar} stock={producto.stock} />
       </div>
     </div>
   );

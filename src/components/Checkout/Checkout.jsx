@@ -31,9 +31,9 @@ const Checkout = () => {
     const response = await validateForm(datosForm);
     if (response.status === 'success') {
       await sendOrder(orden);
-      vaciarCarrito(); // Vaciar el carrito después de enviar la orden
+      vaciarCarrito();
     } else {
-      alert(response.message); // Cambié el toast.warning por un alert para consistencia
+      alert(response.message);
     }
   };
 

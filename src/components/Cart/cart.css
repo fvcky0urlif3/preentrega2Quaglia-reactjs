@@ -1,33 +1,37 @@
 .cart {
   padding: 20px;
-  background-color: #222; /* Fondo oscuro para contrastar con el texto */
-  color: #fff; /* Texto blanco para mayor legibilidad */
+  background-color: #222; 
+  color: #fff; 
   border-radius: 10px;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .empty-cart {
   text-align: center;
   font-size: 1.5em;
-  color: #ccc; /* Color de texto para el mensaje de carrito vacío */
+  color: #ccc;
 }
 
 .button-empty-cart {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #d400ff; /* Color de fondo del botón */
-  color: white;
+  background-color: #d400ff; 
+  color: rgb(0, 0, 0);
   border-radius: 5px;
   text-decoration: none;
   font-size: 1em;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carritovacio {
+  margin-top: 50px ;
 }
 
 .button-empty-cart:hover {
-  background-color: #8000b3; /* Color de fondo del botón en hover */
-  color: white; /* Color del texto en hover */
+  background-color: #8000b3; 
+  color: white; 
 }
 
 .cart-list {
@@ -36,8 +40,8 @@
 }
 
 .cart-item {
-  background-color: #333; /* Fondo más oscuro para los ítems del carrito */
-  border: 1px solid #555; /* Borde ligero para separación */
+  background-color: #333; 
+  border: 1px solid #555; 
   border-radius: 8px;
   padding: 15px;
   margin-bottom: 15px;
@@ -54,7 +58,7 @@
 
 .cart-item p {
   margin: 5px 0;
-  color: #fff; /* Color del texto */
+  color: #fff; 
   font-size: 1em;
 }
 
@@ -73,24 +77,24 @@
 }
 
 .cart-item-details button {
-  background-color: #d400ff; /* Color de fondo del botón */
+  background-color: #d400ff;
   color: white;
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 1em;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cart-item-details button:disabled {
-  background-color: #aaa; /* Color para botón deshabilitado */
+  background-color: #aaa;
   cursor: not-allowed;
 }
 
 .cart-item-details button:hover:not(:disabled) {
-  background-color: #8000b3; /* Color de fondo del botón en hover */
-  color: white; /* Color del texto en hover */
+  background-color: #8000b3;
+  color: white;
 }
 
 .cart-controls {
@@ -101,7 +105,7 @@
 .cart-controls h2 {
   margin-bottom: 10px;
   font-size: 1.5em;
-  color: #fff; /* Color del texto del total */
+  color: #fff;
 }
 
 .cart-controls .buttons {
@@ -113,7 +117,7 @@
 .button-cart {
   display: flex;
   align-items: center;
-  background-color: #d400ff; /* Color de fondo del botón */
+  background-color: #d400ff;
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 5px;
@@ -121,12 +125,12 @@
   font-size: 1em;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button-cart:hover {
-  background-color: #8000b3; /* Color de fondo del botón en hover */
-  color: white; /* Color del texto en hover */
+  background-color: #8000b3;
+  color: white;
 }
 
 .button-cart svg {
@@ -134,7 +138,7 @@
 }
 
 .cart-item-controls button {
-  background-color: #d400ff; /* Color de fondo del botón */
+  background-color: #d400ff;
   color: rgb(3, 3, 3);
   border: none;
   border-radius: 5px;
@@ -142,15 +146,15 @@
   font-size: 1em;
   cursor: pointer;
   margin: 0 5px;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cart-item-controls button:disabled {
-  background-color: #aaa; /* Color para botón deshabilitado */
+  background-color: #aaa;
   cursor: not-allowed;
 }
 
 .cart-item-controls button:hover:not(:disabled) {
-  background-color: #8000b3; /* Color de fondo del botón en hover */
-  color: white; /* Color del texto en hover */
+  background-color: #8000b3;
+  color: white;
 }

@@ -1,10 +1,10 @@
-/* Estilo para el contenedor principal */
+/* contenedor principal */
 .item-list-container {
   text-align: center;
   padding: 20px;
 }
 
-/* Estilo para el título */
+/* título */
 .item-list-container h3 {
   font-size: 2.5rem;
   color: rgb(95, 13, 101);
@@ -12,7 +12,7 @@
   font-weight: bold;
 }
 
-/* Estilo para los párrafos */
+/* parrafos */
 .item-list-container p {
   font-size: 1.2rem;
   color:  #d4d4d4; 
@@ -23,7 +23,7 @@
   margin-right: auto;
 }
 
-/* Estilo para la descripción */
+/* descripción */
 .description {
   font-size: 1.4rem;
   color: #444; 
@@ -31,27 +31,27 @@
   margin-bottom: 20px;
 }
 
-/* Estilo para el contenedor del video de YouTube */
+/* contenedor del video de YouTube */
 .video-container {
   margin: 20px auto;
 }
 
-/* Estilo para el iframe de YouTube */
+/* iframe de YouTube */
 .video-container iframe {
   border-radius: 15px;
 }
 
-/* Estilo para el contenedor del perfil de Instagram */
+/* contenedor del perfil de Instagram */
 .instagram-container {
   margin: 20px auto;
 }
 
-/* Estilo para el iframe de Instagram */
+/* iframe de Instagram */
 .instagram-container iframe {
   border-radius: 15px; 
 }
 
-/* Estilo para la leyenda de Instagram */
+/* leyenda de Instagram */
 .instagram-legend {
   font-size: 1.2rem;
   color: #d4d4d4; 
@@ -60,7 +60,7 @@
   text-align: center;
 }
 
-/* Estilo para la leyenda de riders */
+/* leyenda de riders */
 .riders-legend {
   font-size: 1.2rem;
   color:#444; 
@@ -69,7 +69,7 @@
   text-align: center;
 }
 
-/* Estilo para los perfiles de Instagram de los riders */
+/* perfiles de stagram de los riders */
 .riders-links {
   display: flex;
   flex-wrap: wrap; 
@@ -85,7 +85,7 @@
   flex-shrink: 0; 
 }
 
-/* Estilo para la leyenda de navegación */
+/* leyenda de navegación */
 .navigation-legend {
   font-size: 1.2rem;
   color: #d4d4d4; 
@@ -94,7 +94,7 @@
   text-align: center;
 }
 
-/* Estilo para las tarjetas de productos */
+/* tarjetas de productos */
 .itemlist {
   display: flex;
   flex-wrap: wrap;
@@ -103,7 +103,7 @@
   padding: 20px;
 }
 
-/* Estilo para cada tarjeta de producto */
+/* tarjeta de producto */
 .card {
   width: 250px;
   border: 2px solid rgb(50, 50, 50);
@@ -113,7 +113,7 @@
   box-shadow: 0 4px 8px rgba(180, 9, 174, 0.69);
 }
 
-/* Estilo para el texto dentro de la tarjeta de producto */
+/* texto dentro de la tarjeta de producto */
 .card p {
   font-size: 16px;
   padding: 10px;
@@ -121,7 +121,7 @@
   margin: 0;
 }
 
-/* Estilo para la imagen dentro de la tarjeta de producto */
+/* imagen dentro de la tarjeta de producto */
 .img-card {
   width: 100%;
   height: 200px;
@@ -135,7 +135,7 @@
   border-bottom: 2px solid white;
 }
 
-/* Estilo para los enlaces generales */
+/* enlaces generales */
 .link {
   display: block;
   background-color: rgb(81, 15, 91);
@@ -152,7 +152,7 @@
   background-color: rgb(100, 25, 120); /* Color de fondo más claro en hover */
 }
 
-/* Estilo para los enlaces de perfiles de Instagram de los riders */
+/* Estilo perfiles de Instagram de los riders */
 .riders-links a {
   color: rgb(35, 12, 73); 
   text-decoration: none;

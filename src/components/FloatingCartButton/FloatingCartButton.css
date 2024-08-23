@@ -3,19 +3,19 @@
   bottom: 20px;
   right: 20px;
   background-color: #d400ff;
-  color: rgb(0, 0, 0); /* Color del texto por defecto */
+  color: rgb(0, 0, 0); 
   border: none;
   padding: 15px 20px;
   border-radius: 50px;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   font-size: 1em;
-  font-weight: bold; /* Texto en negrita */
+  font-weight: bold;
   z-index: 1000;
-  transition: color 0.3s ease, background-color 0.3s ease; /* Transiciones suaves para color y fondo */
+  transition: color 0.3s ease, background-color 0.3s ease; 
 }
 
 .floating-cart-button:hover {
   background-color: #8000b3;
-  color: #ffffff; /* Color del texto al pasar el mouse */
+  color: #ffffff; 
 }

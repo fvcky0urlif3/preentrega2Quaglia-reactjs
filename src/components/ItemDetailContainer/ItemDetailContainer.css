@@ -2,11 +2,11 @@
 
 .item-detail-container {
   padding: 20px;
-  background-color: #222; /* Fondo oscuro para contrastar con el texto */
-  color: #fff; /* Texto blanco para mayor legibilidad */
+  background-color: #222;
+  color: #fff;
   border-radius: 10px;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .item-detail {
@@ -16,7 +16,7 @@
   border: 1px solid #555; /* Borde ligero para separación */
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
   width: 100%;
   max-width: 800px;
@@ -43,27 +43,27 @@
 .item-detail .detail h2 {
   margin-bottom: 10px;
   font-size: 1.5em;
-  color: #fff; /* Color del texto */
+  color: #fff; 
 }
 
 .item-detail .detail p {
   margin: 5px 0;
   font-size: 1em;
-  color: #ccc; /* Color del texto */
+  color: #ccc;
 }
 
 .item-detail .detail .add {
   margin-top: 20px;
-  background-color: #ea00ff; /* Color de fondo del botón */
+  background-color: #ea00ff; 
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1em;
-  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  transition: background-color 0.3s ease;
 }
 
 .item-detail .detail .add:hover {
-  background-color: #8f0c91; /* Color más oscuro en hover */
+  background-color: #8f0c91;
 }

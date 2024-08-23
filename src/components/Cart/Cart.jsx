@@ -10,7 +10,7 @@ const Cart = () => {
   if (carrito.length === 0) {
     return (
       <div className="empty-cart">
-        <p> 😭 El carrito está vacío  😭</p>
+        <p className="carritovacio"> 😭 El carrito está vacío  😭</p>
         <a href="/" className="button-empty-cart">Volver a la tienda</a>
       </div>
     );
@@ -44,13 +44,13 @@ const Cart = () => {
           <button className="button-cart" onClick={vaciarCarrito}>Vaciar Carrito</button>
           <button 
             className="button-cart" 
-            onClick={() => navigate('/checkout')} // Redirigir al checkout
+            onClick={() => navigate('/checkout')} // Redirige al checkout
           >
             Proceder al Pago
           </button>
           <button 
             className="button-cart"
-            onClick={() => navigate('/')} // Redirigir a la página principal
+            onClick={() => navigate('/')} // Redirige a la pag principal
           >
             Seguir Navegando
           </button>
